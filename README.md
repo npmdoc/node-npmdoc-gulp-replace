@@ -1,11 +1,13 @@
-# api documentation for  [gulp-replace (v0.5.4)](https://github.com/lazd/gulp-replace)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-replace.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-replace)
+# api documentation for  [gulp-replace (v0.5.4)](https://github.com/lazd/gulp-replace)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-replace.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-replace) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-replace.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-replace)
 #### A string replace plugin for gulp
 
 [![NPM](https://nodei.co/npm/gulp-replace.png?downloads=true)](https://www.npmjs.com/package/gulp-replace)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-replace/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp_replace_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-replace/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-replace/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-gulp-replace%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-replace/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-gulp-replace/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-replace/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-gulp-replace/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
