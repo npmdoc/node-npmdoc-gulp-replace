@@ -1,9 +1,14 @@
-# api documentation for  [gulp-replace (v0.5.4)](https://github.com/lazd/gulp-replace)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-replace.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-replace) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-replace.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-replace)
+# npmdoc-gulp-replace
+
+#### api documentation for  [gulp-replace (v0.5.4)](https://github.com/lazd/gulp-replace)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-replace.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-replace) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-replace.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-replace)
+
 #### A string replace plugin for gulp
 
-[![NPM](https://nodei.co/npm/gulp-replace.png?downloads=true)](https://www.npmjs.com/package/gulp-replace)
+[![NPM](https://nodei.co/npm/gulp-replace.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-replace)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-replace/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-gulp-replace%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-replace/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-replace/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-replace/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-replace/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-replace/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-replace/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Larry Davis",
-        "email": "lazdnet@gmail.com"
+        "name": "Larry Davis"
     },
     "bugs": {
         "url": "https://github.com/lazd/gulp-replace/issues"
@@ -52,13 +56,11 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "lazd",
-            "email": "lazdnet@gmail.com"
+            "name": "lazd"
         }
     ],
     "name": "gulp-replace",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/lazd/gulp-replace.git"
@@ -66,19 +68,10 @@
     "scripts": {
         "test": "mocha"
     },
-    "version": "0.5.4"
+    "version": "0.5.4",
+    "bin": {}
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-replace](#apidoc.module.gulp-replace)
-
-
-
-# <a name="apidoc.module.gulp-replace"></a>[module gulp-replace](#apidoc.module.gulp-replace)
 
 
 
