@@ -61,12 +61,104 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-replace">module gulp-replace</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-replace.gulp-replace">
+            function <span class="apidocSignatureSpan"></span>gulp-replace
+            <span class="apidocSignatureSpan">(search, replacement, options)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-replace" id="apidoc.module.gulp-replace">module gulp-replace</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-replace.gulp-replace" id="apidoc.element.gulp-replace.gulp-replace">
+        function <span class="apidocSignatureSpan"></span>gulp-replace
+        <span class="apidocSignatureSpan">(search, replacement, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-replace = function (search, replacement, options) {
+  return new Transform({
+    objectMode: true,
+    transform: function(file, enc, callback) {
+      if (file.isNull()) {
+        return callback(null, file);
+      }
+
+      function doReplace() {
+        if (file.isStream()) {
+          file.contents = file.contents.pipe(rs(search, replacement));
+          return callback(null, file);
+        }
+
+        if (file.isBuffer()) {
+          if (search instanceof RegExp) {
+            file.contents = new Buffer(String(file.contents).replace(search, replacement));
+          }
+          else {
+            var chunks = String(file.contents).split(search);
+
+            var result;
+            if (typeof replacement === &#x27;function&#x27;) {
+              // Start with the first chunk already in the result
+              // Replacements will be added thereafter
+              // This is done to avoid checking the value of i in the loop
+              result = [ chunks[0] ];
+
+              // The replacement function should be called once for each match
+              for (var i = 1; i &#x3c; chunks.length; i++) {
+                // Add the replacement value
+                result.push(replacement(search));
+
+                // Add the next chunk
+                result.push(chunks[i]);
+              }
+
+              result = result.join(&#x27;&#x27;);
+            }
+            else {
+              result = chunks.join(replacement);
+            }
+
+            file.contents = new Buffer(result);
+          }
+          return callback(null, file);
+        }
+
+        callback(null, file);
+      }
+
+      if (options &#x26;&#x26; options.skipBinary) {
+        istextorbinary.isText(file.path, file.contents, function(err, result) {
+          if (err) {
+            return callback(err, file);
+          }
+
+          if (!result) {
+            callback(null, file);
+          } else {
+            doReplace();
+          }
+        });
+
+        return;
+      }
+
+      doReplace();
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
